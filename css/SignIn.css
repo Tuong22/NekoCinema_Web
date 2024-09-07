@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    height: 100%
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+.content {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#041729, #0A8CFF);
+
+}
+
+#logo {
+    height: 25px
+}
+
+ul {
+    display: flex;
+}
+
+.options {
+    display: flex;
+}
+
+li, i, .text-signin {
+    font-size: 18px;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    font-size: 15px;
+    color: white;
+}
+
+#bo-cong-thuong {
+    width: 170px;
+}
+
+#scroll-to-top {
+    position: relative;
+}
+
+.footer {
+    background-color: #0B2447;
+}
