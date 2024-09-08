@@ -15,6 +15,11 @@ header {
 
 }
 
+.SignIn {
+    background-color: white;
+    width: 50%;
+}
+
 #logo {
     height: 25px
 }
@@ -29,13 +34,14 @@ ul {
 
 li, i, .text-signin {
     font-size: 18px;
+    color: white;
 }
 
 li {
     list-style-type: none;
 }
 
-p {
+footer p {
     font-size: 15px;
     color: white;
 }
@@ -51,3 +57,4 @@ p {
 .footer {
     background-color: #0B2447;
 }
+
