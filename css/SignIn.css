@@ -7,6 +7,11 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/static/Inter_24pt-Black.ttf') format('truetype');
+}
+
 #logo {
     height: 25px;
     margin: auto;
@@ -80,6 +85,8 @@ li {
     margin-top: 40px;
     margin-bottom: 10px;
     font-size: 32px;
+    font-family: 'Inter';
+    font-weight: bold;
 }
 
 #fb-logo, #gg-logo {
@@ -90,6 +97,7 @@ li {
 
 .input-info {
     width: 50%;
+    font-family: 'Inter';
 }
 
 input {
@@ -191,13 +199,17 @@ footer {
     font-size: 15px;
     height: 40vh;
     margin-top: 30px;
-    min-height: 45vh;
-    
+    min-height: 50vh;
+}
+
+p, li {
+    font-family: 'Inter';
 }
 
 #bo-cong-thuong {
     width: 170px;
     margin-top: 30px;
+    margin-bottom: 2px;
 }
 
 #scroll-to-top {
@@ -206,4 +218,24 @@ footer {
     left: 46vw;
     max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của trang */
     max-height: 100vh; /* Đảm bảo không vượt quá chiều cao của viewport */
+}
+
+.show-hide-pass {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.show-hide-pass i {
+    padding: 0;
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.box-signup-btn {
+    background-color: #ffc436;
+    border-radius: 8px;
+    height: 27px;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 15px;
 }
