@@ -44,7 +44,7 @@ li {
     font-family: 'Inter-Light';
 }
 
-p {
+.Contact p {
     font-family: 'Inter-Light';
 }
 
@@ -61,7 +61,7 @@ p {
     margin-right: 15px;
 }
 
-.SignIn {
+.SignUp {
     background-color: white;
     display: flex;
     margin: auto;
@@ -74,17 +74,13 @@ p {
     align-items: center;
 }
 
-.signin-name {
-    margin-bottom: 10px;
-}
-
-.name-input, .pass-input {
+.fullname-input, .birth-input, .cccd-input, .sdt-input, .email-input, .name-input, .pass-input, .confirmpass-input {
     font-weight: bold;
     font-size: 16px;
     font-family: 'Inter-Light';
 }
 
-#username, #password {
+#fullname, #birth, #cccd, #sdt, #email, #username, #password {
     border: none;
     border-bottom: 2px solid black;
     font-family: 'Inter-Light';
@@ -98,12 +94,6 @@ p {
     font-family: 'Inter-Black';
 }
 
-#fb-logo, #gg-logo {
-    width: 40px;
-    margin: 0 2px 30px 10px;
-    font-weight: bold;
-}
-
 .input-info {
     width: 50%;
 }
@@ -113,27 +103,17 @@ input {
     width: 100%;
 }
 
-.signup-account {
+.signin-account {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
-.remeber-pass {
+.signup-agree-rules {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-
-.rememberpassword {
-    zoom: 1.1;
-    background-color: #337CCF;
-    margin: auto;
-    width: 10%;
-}
-
-.remember-password {
-    flex: 1;
 }
 
 .signup-text {
@@ -151,7 +131,14 @@ input {
     font-weight: bold;
 }
 
-.box-signin-btn {
+.agree-rules {
+    zoom: 1.2;
+    background-color: #337CCF;
+    margin: auto;
+    width: 10%;
+}
+
+.box-signup-btn {
     background-color: #ffc436;
     border-radius: 10px;
     border: none;
@@ -162,14 +149,29 @@ input {
     font-weight: bold;
 }
 
-.not-have-account, .signup-text, .remember-password {
+.already-have-account, .signin-text{
     color: #337CCF;
     font-size: 15px;
     font-family: 'Inter-Light';
     font-weight: bold;
 }
 
-.signup-text {
+.agree-rules-text {
+    flex: 1;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #337CCF;
+    font-size: 13px;
+    font-family: 'Inter-Light';
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.signin-text {
+    margin-left: 2px;
     text-decoration: underline;
 }
 
@@ -231,18 +233,18 @@ footer {
     max-height: 100vh; /* Đảm bảo không vượt quá chiều cao của viewport */
 }
 
-.show-hide-pass {
+.show-hide-pass, .show-calendar {
     display: flex;
     margin-bottom: 10px;
 }
 
-.show-hide-pass i {
+.show-hide-pass i, .show-calendar i {
     padding: 0;
     border-bottom: 2px solid black;
     color: black;
 }
 
-.box-signup-btn {
+.box-signin-btn {
     background-color: #ffc436;
     border-radius: 8px;
     height: 27px;

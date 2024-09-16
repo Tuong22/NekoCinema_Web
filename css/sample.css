@@ -1,0 +1,104 @@
+body {
+    height: 100%;
+    background-image: linear-gradient(#041729, #0868bd);
+    background-repeat: no-repeat;
+    margin: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Inter-Black';
+    src: url('fonts/Inter_24pt-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Light';
+    src: url('fonts/Inter_24pt-Light.ttf') format('truetype');
+}
+
+#logo {
+    height: 25px;
+    margin: auto;
+    margin-left: 30px;
+    margin-right: 20vw;
+}
+
+li, i {
+    color: white;
+}
+
+header {
+    display: flex;
+    margin-top: 20px;
+}
+
+.menu-bar {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    font-family: 'Inter-Light';
+}
+
+.Contact p {
+    font-family: 'Inter-Light';
+}
+
+.options {
+    display: flex;
+    margin: auto;
+    margin-left: 20vw;
+    margin-right: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options i {
+    margin-right: 15px;
+}
+
+.Contact {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-top: 90px;
+}
+
+.CSKH-text, .Connect-text, .Install-on-text, .Rules-text, .Others-text {
+    font-size: 20px;
+    font-family: 'Inter-Light';
+    font-weight: bold;
+    margin: auto;
+    padding: 5px 7px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #1f6ab6;
+}
+
+footer {
+    background-color: #0b2447;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    height: 40vh;
+    margin-top: 30px;
+    min-height: 50vh;
+}
+
+#bo-cong-thuong {
+    width: 170px;
+    margin-top: 60px;
+    margin-bottom: 2px;
+}
+
+#scroll-to-top {
+    position: relative;
+    width: 72px;
+    left: 46vw;
+    max-width: 100%; /* Đảm bảo không vượt quá chiều rộng của trang */
+    max-height: 100vh; /* Đảm bảo không vượt quá chiều cao của viewport */
+}

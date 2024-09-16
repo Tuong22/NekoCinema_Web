@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/SignIn.css" />
+    <link rel="stylesheet" type="text/css" href="../css/SignUp.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>NekoCinema - Niềm vui bất tận, bắt trọn khoảnh khắc</title>
+    <title>Đăng ký tài khoản</title>
 </head>
 <body>
     <div class="content">
         <header>
             <img id="logo" src="../images/logo.png">
             <ul class="menu-bar">
-                <li>Trang chủ</li>  
+                <li>Trang chủ</li>
                 <li>Phim</li>
                 <li>Lịch chiếu</li>
                 <li>Giá vé</li>
@@ -22,13 +22,36 @@
             <div class="options">
                 <i class="fa-solid fa-magnifying-glass"></i>                
                 <i class="fa-solid fa-bell"></i>
-                <button onclick="window.location.href='SignUp.html'" id="box-signup-btn" class="box-signup-btn" type="button">Đăng ký</button>
+                <button onclick="window.location.href='SignIn.html'" id="box-signin-btn" class="box-signin-btn" type="button">Đăng nhập</button>
             </div>
         </header>
-        <div class="SignIn">
-            <div class="title">Đăng nhập</div>
+        <div class="SignUp">
+            <div class="title">Đăng ký</div>
             <div class="input-info">
-                <div class="signin-name">
+                <div class="signup-fullname">
+                    <p class="fullname-input">Họ và tên</p>
+                    <input type="text" id="fullname" placeholder="Nhập họ và tên">
+                </div>
+                <div class="signup-birth">
+                    <p class="birth-input">Ngày sinh</p>
+                    <div class="show-calendar">
+                        <input type="text" id="birth" placeholder="dd/mm/yyyy">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                </div>
+                <div class="signup-cccd">
+                    <p class="cccd-input">CCCD/CMND</p>
+                    <input type="text" id="cccd" placeholder="Nhập số CCCD/CMND">
+                </div>
+                <div class="signup-sdt">
+                    <p class="sdt-input">Số điện thoại</p>
+                    <input type="text" id="sdt" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="signup-email">
+                    <p class="email-input">Email</p>
+                    <input type="text" id="email" placeholder="Nhập email">
+                </div>
+                <div class="signup-name">
                     <p class="name-input">Tên đăng nhập</p>
                     <input type="text" id="username" placeholder="Nhập tên đăng nhập">
                 </div>
@@ -39,20 +62,21 @@
                         <i class="fa-solid fa-eye-slash"></i>
                     </div>
                 </div>
-                <p class="forget-pass">Quên mật khẩu?</p>
-                <div class="remeber-pass">
-                    <input type="checkbox" class="rememberpassword">
-                    <p class="remember-password">Ghi nhớ mật khẩu</p>
+                <div class="signin-confirmpass">
+                    <p class="confirmpass-input">Xác nhận mật khẩu</p>
+                    <div class="show-hide-pass">
+                        <input type="text" id="password" placeholder="Xác nhận mật khẩu">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
                 </div>
-                <button class="box-signin-btn" type="button">ĐĂNG NHẬP</button>
-                <div class="signup-account">
-                    <p class="not-have-account">Bạn chưa có tài khoản?</p>
-                    <p class="signup-text">Đăng ký</p>
+                <div class="signup-agree-rules">
+                    <input type="checkbox" class="agree-rules">
+                    <div class="agree-rules-text">Tôi đã đồng ý với <span class="underline">chính sách và điều khoản</span> của Neko Cinema</div>
                 </div>
-                <p class="other-option">Hoặc đăng nhập bằng</p>
-                <div class="logo">
-                    <img id="fb-logo" src="../images/facebook.png">
-                    <img id="gg-logo" src="../images/Google_icon.png">
+                <button class="box-signup-btn" type="button">ĐĂNG KÝ</button>
+                <div class="signin-account">
+                    <p class="already-have-account">Bạn đã có tài khoản?</p>
+                    <p class="signin-text">Đăng nhập</p>
                 </div>
             </div>
         </div>
